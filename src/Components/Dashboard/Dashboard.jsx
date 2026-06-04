@@ -292,12 +292,12 @@
 import React, { useState } from 'react';
 import {
   Card, Row, Col, Button, Form, Input, InputNumber,
-  Table, Tag, message, Select, Statistic, Modal, Popconfirm, Upload
+  Table, Tag, message, Select, Modal, Popconfirm, Upload
 } from 'antd';
 import {
   PlusOutlined, DeleteOutlined, EditOutlined,
-  DashboardOutlined, ShoppingOutlined, UsergroupAddOutlined,
-  RiseOutlined, LogoutOutlined, UploadOutlined
+  DashboardOutlined, ShoppingOutlined, 
+  LogoutOutlined, UploadOutlined
 } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import { FaLeaf, FaBox, FaChartLine, FaUsers, FaTruck } from 'react-icons/fa';

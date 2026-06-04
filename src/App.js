@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './Components/Context/CartContext';
 import { AuthProvider } from './Components/Context/AuthContext';
-import Header from './Components/Landing/Header'
-import Footer from './Components/Landing/Footer';
+
 import Landing from './Components/Landing/Landing';
 import ProductPage from './Components/Landing/ProductPage';
 import Categories from './Components/Landing/Categories';
