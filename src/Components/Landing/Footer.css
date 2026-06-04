@@ -1,0 +1,243 @@
+/* Newsletter */
+.newsletter-bar {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  padding: 36px 60px;
+}
+
+.newsletter-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.newsletter-text {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: white;
+}
+
+.nl-icon {
+  font-size: 32px;
+  color: #a5d6a7;
+  flex-shrink: 0;
+}
+
+.newsletter-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: white;
+}
+
+.newsletter-text p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.nl-input {
+  width: 260px !important;
+  border-radius: 8px !important;
+  height: 42px !important;
+  border: none !important;
+  background: rgba(255,255,255,0.15) !important;
+  color: white !important;
+}
+
+.nl-input::placeholder {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+.nl-input:focus {
+  background: rgba(255,255,255,0.22) !important;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.2) !important;
+}
+
+.nl-btn {
+  background: white !important;
+  color: #2e7d32 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  height: 42px !important;
+  padding: 0 20px !important;
+  font-weight: 700 !important;
+  transition: all 0.2s !important;
+}
+
+.nl-btn:hover {
+  background: #f1f8e9 !important;
+  transform: scale(1.02) !important;
+}
+
+/* Main Footer */
+.footer-main {
+  background: #0d2b10;
+  padding: 56px 60px 40px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.social-icons a:hover {
+  background: #2e7d32;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-heading {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #a5d6a7;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  background: #0a1f0c;
+  padding: 16px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover {
+  color: #a5d6a7;
+}
+
+@media (max-width: 768px) {
+  .newsletter-bar {
+    padding: 28px 20px;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .nl-input {
+    width: 100% !important;
+    flex: 1;
+  }
+
+  .footer-main {
+    padding: 40px 20px;
+  }
+
+  .footer-bottom {
+    padding: 16px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+}

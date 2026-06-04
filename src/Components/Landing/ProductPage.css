@@ -1,0 +1,256 @@
+.product-page {
+  padding: 40px 60px 60px;
+  background: #f8fdf8;
+  min-height: 60vh;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+  max-width: 480px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e7d32;
+  font-size: 15px;
+  z-index: 1;
+}
+
+.search-input {
+  padding-left: 40px !important;
+  height: 42px !important;
+  border-radius: 10px !important;
+  border-color: #c8e6c9 !important;
+  font-size: 14px !important;
+}
+
+.search-input:focus {
+  border-color: #2e7d32 !important;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12) !important;
+}
+
+.sort-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+}
+
+.filter-icon {
+  color: #2e7d32;
+}
+
+.sort-select {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  background: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.sort-select:focus {
+  border-color: #2e7d32;
+}
+
+.category-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.pill {
+  padding: 7px 18px;
+  border-radius: 100px;
+  border: 1.5px solid #c8e6c9;
+  background: white;
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.pill:hover {
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+.pill-active {
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white !important;
+  border-color: transparent !important;
+  box-shadow: 0 3px 10px rgba(46, 125, 50, 0.3);
+}
+
+.products-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a3c20;
+  margin: 0;
+}
+
+.results-count {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f8e9;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.product-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(46, 125, 50, 0.9);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.5px;
+}
+
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a3c20;
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+.star-row {
+  color: #f9a825;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 3px;
+}
+
+.rating-val {
+  font-size: 12px;
+  color: #666;
+  font-weight: 600;
+}
+
+.reviews-count {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #2e7d32, #43a047) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  height: 36px !important;
+  padding: 0 14px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  transition: all 0.25s ease !important;
+}
+
+.add-btn:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.4) !important;
+}
+
+.add-btn.added {
+  background: linear-gradient(135deg, #388e3c, #66bb6a) !important;
+}
+
+@media (max-width: 768px) {
+  .product-page {
+    padding: 24px 16px 40px;
+  }
+
+  .filter-bar {
+    gap: 10px;
+  }
+
+  .search-wrap {
+    max-width: 100%;
+  }
+}

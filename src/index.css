@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8fdf8;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* Ant Design overrides */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #2e7d32, #43a047) !important;
+  border-color: #2e7d32 !important;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32) !important;
+  border-color: #1b5e20 !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f8e9;
+}
+::-webkit-scrollbar-thumb {
+  background: #a5d6a7;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e7d32;
+}
